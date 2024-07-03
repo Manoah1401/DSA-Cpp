@@ -44,9 +44,23 @@ int main(){
         for(int j=0;j<i+1;j++){
             cout << "* ";
         }
-
-
         cout << endl;
     }
+    cout << endl;
+
+    //both side triangle
+    for(int i=0;i<2*number-1;i++){
+        int x;
+        x=i;
+        if(i>number-1){
+            x=2*number-i-2;
+        }
+        for(int j=0;j<x+1;j++){
+            cout << "*";
+        }
+        cout << endl;
+    }
+
+
     return 0;
 }
