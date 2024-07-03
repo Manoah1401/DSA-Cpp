@@ -1,3 +1,3 @@
-        if(i+1>number){
-            x=2*number-i;
-        }
+for(int k=1)
+        // //number
+        // for(int l=1)
