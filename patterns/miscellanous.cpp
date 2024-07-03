@@ -31,9 +31,25 @@ void pattern1(int n){
     }
 
 }
+
+void pattern2(int n){
+    for(int i=0;i<2*n-1;i++){
+        for(int j=0;j<2*n-1;j++){
+            int top=i;
+            int left=j;
+            int bottom=2*n-i-2;
+            int right=2*n-j-2;
+
+            int val= min(min(top,left),min(bottom,right));
+            cout << 4-val << " ";
+        }
+        cout << endl;
+    }
+}
 int main(){
     int n;
     cin >> n;
     pattern1(n);
+    pattern2(n);
     return 0;
 }
