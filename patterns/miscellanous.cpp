@@ -46,10 +46,39 @@ void pattern2(int n){
         cout << endl;
     }
 }
+
+void pattern3(int n){
+    int space=2*(n-1);
+    for(int i=1;i<=2*n-1;i++){
+        int x=i;
+        if(i>n) x=2*n-i;
+        //star
+        for(int j=1;j<=x;j++){
+            cout << "*";
+        }
+        //space
+        for(int k=1;k<=space;k++){
+            cout << " ";
+        }
+        //star
+        for(int l=1;l<=x;l++){
+            cout << "*";
+        }
+        cout << endl;
+        if(i>=n){
+            space+=2;
+        }
+        else{
+            space-=2;
+        } 
+    }
+}
+
 int main(){
     int n;
     cin >> n;
     pattern1(n);
     pattern2(n);
+    pattern3(n);
     return 0;
 }
