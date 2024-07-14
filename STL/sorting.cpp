@@ -13,6 +13,10 @@ int main(){
         cout << arr[i] << endl;
     }
 
+    int num=7;
+    int cnt=__builtin_popcount(num); //__builtin_popcountll(); for long long numbers
+
+    cout << "Binary 1s: "<<cnt;
     
     
     return 0;
