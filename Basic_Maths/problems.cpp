@@ -10,6 +10,11 @@ void count_digit(int n){
     cout << count << endl;
 }
 
+void count_log(int n){
+    int val=(int)(log10(n) + 1);
+    cout << val << endl;
+}
+
 void evenlyDivides(int N){
         int count=0;
         int last=0;
@@ -29,5 +34,6 @@ int main(){
     int num;
     cin >> num;
     count_digit(num);
+    count_log(num);
     evenlyDivides(num);
 }
