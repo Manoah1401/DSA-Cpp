@@ -10,7 +10,7 @@ int main(){
 
     sort(arr,arr+5);
     for(auto i=0;i<5;i++){
-        // cout << arr[i] << endl;
+        cout << arr[i] << endl;
     }
 
     
