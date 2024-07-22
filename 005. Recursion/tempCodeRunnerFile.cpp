@@ -1,1 +1,1 @@
-    cout << cnt;
+    // parameter(n,0);
