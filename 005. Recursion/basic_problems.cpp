@@ -26,10 +26,21 @@ void back(int i, int n){
     cout << i << endl;
 }
 
+// n to 1 using backtracking
+
+void rev_back(int i, int n){
+    if(i>n){
+        return;
+    }
+    rev_back(i+1,n);
+    cout << i << endl;
+}
+
 int main(){
     int n=0;
     cin >> n;
     // name(1,n);
     // reverse(n,n);
     // back(n,n);
+    rev_back(1,n);
 }
