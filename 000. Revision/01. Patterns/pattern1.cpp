@@ -55,11 +55,25 @@ void pattern4(int rows){
         cout << endl;
     }
 }
+void pattern5(int rows){
+    for(int i=0;i<2*rows-1;i++){
+        for(int j=0;j<2*rows-1;j++){
+            int top=i;
+            int left=j;
+            int bottom=(2*rows-1)-1-i;
+            int right=(2*rows-1)-1-j;
+
+            cout << 4-(min(min(top,bottom),min(left,right)));
+        }
+        cout << endl;
+    }
+}
 int main(){
     int rows;
     cin >> rows;
     //pattern1(rows);
     //pattern2(rows);
     //pattern3(rows);
-    pattern4(rows);
+    //pattern4(rows);
+    pattern5(rows);
 }
