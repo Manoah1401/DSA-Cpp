@@ -2,13 +2,13 @@
 using namespace std;
 int main(){
     int age;
+    cout << "Enter age: ";
     cin >> age;
-    if (age > 18){
-        cout << "Ok";
+    if(age>18){
+        cout << age <<" is permitted";
     }
-
-    else if(age <=18 ){
-        cout << age << " not ok";
+    else{
+        cout << "underage";
     }
     return 0;
 }
